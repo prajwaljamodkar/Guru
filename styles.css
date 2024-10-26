@@ -1,0 +1,103 @@
+body {
+    font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  margin: 0%;
+  padding: 0%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    position: relative; /* Needed for absolute positioning of dropdown */
+    margin-right: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown styles */
+.dropdown {
+    display:block; /* Hide dropdown by default */
+    position: absolute; /* Position it relative to the parent */
+    background-color: white; /* Background color of dropdown */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+.navbar li:hover .dropdown {
+    display:inline-block; /* Show dropdown on hover */
+}
+#id{
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+.dropdown li {
+    width: 150px; /* Set a width for dropdown items */
+}
+
+.dropdown a {
+    display: block; /* Make the entire area clickable */
+    padding: 10px; /* Add padding for better clickability */
+    color: #333; /* Text color */
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+section {
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
